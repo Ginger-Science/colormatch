@@ -2,34 +2,24 @@
 
 🚀 **Welcome to GingerScience Portal**  
 A personalized wellness & genomics platform designed for redheads. This portal enables users to access unique health insights, track wellness data, and engage with the community.
-# GingerScience-Research
-
-🔬 **Open Science & DeSci Research for Redheads**  
-This repository supports scientific research on MC1R genetics, health implications, and longevity. Designed for collaboration between researchers, citizen scientists, and bioinformatics experts.
 
 ## 🌟 Features
-- 🧬 **MC1R Genetic Studies & Data Analysis**
-- 📊 **Collaborative Research Papers & Findings**
-- 🔍 **Open-Source Bioinformatics Tools**
-- 🔗 **Integration with DeSci Platforms & DAOs**
+- 🧬 **Personalized Genomics & Wellness Insights**
+- 📊 **Health Tracking & Data Contribution**
+- 🔐 **Privacy-First User Profiles**
+- 🤝 **Community-Driven Research & Engagement**
 
 ## 🏗 Tech Stack
-- Language: **Python / R** (Bioinformatics & Data Science)
-- Data Visualization: **Matplotlib / Seaborn**
-- API: **FastAPI / Flask**
-- Storage: **IPFS / Arweave / PostgreSQL**
-- Research Collaboration: **Notion / Obsidian / GitHub Wiki**
+- Frontend: **Next.js** / React / TailwindCSS
+- Backend: **Supabase** / Firebase
+- API: **GraphQL / REST**
+- Authentication: **OAuth, Wallet Login (future)**
+- Hosting: **Vercel / Netlify**
 
 ## 📌 Roadmap
-- ✅ Initial Data Collection & Literature Review
-- Personalized wellness recommendations
-- 🚧 Crowdsourced Research Collaboration
-- 🚀 AI-Powered MC1R Genetic Analysis
+- ✅ User Registration & Profiles
+- 🚧 Health Data Visualization
+- 🚀 AI-Powered Health Insights
 
 ## 🤝 Contributing
-We welcome researchers & developers! Submit PRs or propose new studies.
-
-
-
-
-
+Open to collaborations—submit PRs or open issues!
