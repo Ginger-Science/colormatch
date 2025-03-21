@@ -1,0 +1,8 @@
+# ITAP Consent Checkbox Text
+
+Use these in the upload flow to confirm user consent and secure content licensing.
+
+```plaintext
+🔲 I confirm that I have consent to share this image, or it was taken in a public space where no reasonable expectation of privacy exists. I understand that it may be used for community education, open scientific research, and public display.
+
+🔲 I grant Ginger Science a worldwide, royalty-free, irrevocable license to use, share, and analyze this image for research, education, and scientific publication.
