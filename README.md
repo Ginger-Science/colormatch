@@ -11,10 +11,8 @@ A personalized wellness & genomics platform designed for redheads. This portal e
 
 ## 🏗 Tech Stack
 - Frontend: **Next.js** / React / TailwindCSS
-- Backend: **Supabase** / Firebase
+- Backend: **Supabase** 
 - API: **GraphQL / REST**
-- Authentication: **OAuth, Wallet Login (future)**
-- Hosting: **Vercel / Netlify**
 
 ## 📌 Roadmap
 - ✅ User Registration & Profiles
