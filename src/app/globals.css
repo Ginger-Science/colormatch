@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom animations */
+@keyframes bounce-delay {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+/* Reset default focus styles */
+*:focus {
+  outline: none;
+}
+
+/* Custom scrollbar for textareas */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.5) rgba(17, 24, 39, 0.1);
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: rgba(17, 24, 39, 0.1);
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 92, 246, 0.5);
+  border-radius: 4px;
+}
+
+/* Ensure proper backdrop-filter support */
+@supports (backdrop-filter: blur(12px)) {
+  .backdrop-blur-lg {
+    backdrop-filter: blur(12px);
+  }
+}
+
+/* Ensure proper text-gradient support */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}

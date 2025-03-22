@@ -1,0 +1,46 @@
+{
+  "name": "wildlife",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.2.1",
+    "@google-cloud/vision": "^4.3.2",
+    "@google/generative-ai": "^0.21.0",
+    "@solana/spl-token": "^0.3.8",
+    "@solana/web3.js": "^1.78.4",
+    "@types/multer": "^1.4.12",
+    "axios": "^1.7.9",
+    "browser-image-compression": "^2.0.2",
+    "exif-reader": "^2.0.1",
+    "file-type": "^20.0.1",
+    "form-data": "^4.0.1",
+    "formidable": "^3.5.2",
+    "lucide-react": "^0.469.0",
+    "multer": "^1.4.5-lts.1",
+    "next": "^15.1.4",
+    "next-connect": "^1.0.0",
+    "openai": "^4.77.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/exif-js": "^2.3.1",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
