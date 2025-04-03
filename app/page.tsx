@@ -54,16 +54,19 @@ const Home = () => {
     <div className="flex flex-col items-center min-h-screen bg-base-100 pt-10 px-4">
       <div className="max-w-3xl w-full text-center">
         <Image
-          src="/hero.png"
-          alt="MC1R Ginger Science Hero"
-          width={800}
-          height={300}
+          src="/favicon.png"
+          alt="redhead"
+          width={200}
+          height={75}
           className="mx-auto rounded-xl border-4 border-primary mb-8"
         />
 
-        <h1 className="text-4xl font-bold mb-2 text-primary">Ginger Science</h1>
-        <p className="text-lg text-neutral-content mb-6">
-          Upload a redhead photo and we’ll identify their MC1R-inspired hair color variant.
+        <h1 className="text-4xl font-bold mb-2 text-primary">Welcome to the Copperati</h1>
+        <h2 className="text-lg text-large text-neutral-content mb-6">
+          A secret society of radiant shades & rare DNA
+        </h2>
+        <p className="text-lg text-primary mb-6">
+          Dedicated to the beauty of science
         </p>
 
         <div className="bg-base-200 p-6 rounded-xl shadow-lg">

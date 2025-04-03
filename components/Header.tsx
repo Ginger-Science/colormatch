@@ -36,8 +36,8 @@ export const menuLinks: HeaderMenuLink[] = [
     icon: <ArrowUpTrayIcon className="h-4 w-4" />,
   },
   {
-    label: "IPFS Download",
-    href: "/ipfsDownload",
+    label: "Block Explorer",
+    href: "/blockexplorer",
     icon: <ArrowDownTrayIcon className="h-4 w-4" />,
   },
   {
@@ -114,8 +114,8 @@ export const Header = () => {
             <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">Ginger Science</span>
-            <span className="text-xs">#Color Matching Fabu-App</span>
+            <span className="font-bold leading-tight">Copperati</span>
+            <span className="text-xs">from Ginger Science</span>
           </div>
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">
