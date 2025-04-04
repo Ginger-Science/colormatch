@@ -80,7 +80,7 @@ const Home = () => {
 
           {imagePreview && (
             <div className="mb-6">
-              <div className="w-96 h-96 mx-auto rounded-full border-4 border-[#C9694A] shadow-xl overflow-hidden">
+              <div className="w-64 h-64 mx-auto rounded-full border-4 border-[#C9694A] shadow-xl overflow-hidden">
                 <img
                   src={imagePreview}
                   alt="Preview"
