@@ -97,25 +97,23 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-[#FFF1E6] via-[#FDE5D4] to-[#F9CBA7] pt-10 px-4">
+    <div className="flex flex-col items-center min-h-screen bg-base-100 text-base-content pt-10 px-4">
       <div className="max-w-3xl w-full text-center">
         <Image
           src="/favicon.png"
           alt="redhead"
           width={200}
           height={75}
-          className="mx-auto rounded-xl border-4 border-primary mb-8"
+          className="mx-auto rounded-xl mb-8"
         />
 
-        <h1 className="text-4xl font-bold mb-2 text-primary">Welcome to the Copperati</h1>
+        <h1 className="text-4xl font-bold mb-2 text-primary">The Copperati</h1>
         <h2 className="text-lg text-large text-neutral-content mb-4">
           A secret society of radiant shades & rare DNA
         </h2>
-        <p className="text-lg text-primary mb-6">
-          Dedicated to the beauty of science
-        </p>
+  
 
-        <div className="bg-white/70 p-6 rounded-xl shadow-xl">
+        <div className="bg-base-200 p-6 rounded-xl shadow-xl">
           {!result && (
             <input
               ref={fileInputRef}
@@ -168,12 +166,13 @@ const Home = () => {
 
           {imagePreview && !result && (
             <>
-              <div className="flex items-center justify-center gap-2 mb-4 text-sm text-neutral-700">
+              <div className="flex items-center justify-center gap-2 mb-4 text-sm text-neutral-content">
                 <input
                   type="checkbox"
                   id="consent"
                   checked={consent}
                   onChange={(e) => setConsent(e.target.checked)}
+                  className="checkbox border-white bg-white dark:border-white dark:bg-white"
                 />
                 <label htmlFor="consent">
                   I agree to the {" "}
@@ -183,7 +182,7 @@ const Home = () => {
                 </label>
               </div>
               <button
-                className="btn btn-primary w-full"
+                className="btn btn-secondary w-full"
                 disabled={loading || !consent}
                 onClick={handleAnalyze}
               >
@@ -193,25 +192,25 @@ const Home = () => {
           )}
 
           {result && (
-            <div className="mt-8 bg-[#FFF4EE] border border-[#EDA57C] rounded-2xl p-8 shadow-xl max-w-md mx-auto text-center">
-              <h2 className="text-3xl font-extrabold text-[#D64527] mb-4 tracking-wide">
+            <div className="mt-8 bg-base-100 border border-[#EDA57C] rounded-2xl p-8 shadow-xl max-w-md mx-auto text-center">
+              <h2 className="text-3xl font-extrabold text-primary mb-4 tracking-wide">
                 ✨ Copperati ✨
               </h2>
 
-              <p className="text-2xl font-bold text-[#2C2C2C] mb-1">{result.name}</p>
+              <p className="text-2xl font-bold text-base-content mb-1">{result.name}</p>
 
               <div className="my-4">
                 <div
                   className="w-24 h-24 rounded-full border-4 border-neutral shadow-lg mx-auto"
                   style={{ backgroundColor: result.hex }}
                 />
-                <span className="mt-2 block text-sm font-mono text-[#888]">
+                <span className="mt-2 block text-sm font-mono text-neutral-content">
                   {result.hex}
                 </span>
               </div>
 
               {result.description && (
-                <p className="italic text-sm text-[#666] mt-2">
+                <p className="italic text-sm text-neutral-content mt-2">
                   {result.description}
                 </p>
               )}
