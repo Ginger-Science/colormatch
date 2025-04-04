@@ -51,7 +51,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-base-100 pt-10 px-4">
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-[#FFF1E6] via-[#FDE5D4] to-[#F9CBA7] pt-10 px-4">
       <div className="max-w-3xl w-full text-center">
         <Image
           src="/favicon.png"
@@ -62,69 +62,78 @@ const Home = () => {
         />
 
         <h1 className="text-4xl font-bold mb-2 text-primary">Welcome to the Copperati</h1>
-        <h2 className="text-lg text-large text-neutral-content mb-6">
+        <h2 className="text-lg text-large text-neutral-content mb-4">
           A secret society of radiant shades & rare DNA
         </h2>
         <p className="text-lg text-primary mb-6">
           Dedicated to the beauty of science
         </p>
 
-        <div className="bg-base-200 p-6 rounded-xl shadow-lg">
+        <div className="bg-white/70 p-6 rounded-xl shadow-xl">
           <input
             ref={fileInputRef}
             type="file"
-            accept="image/*"
+            accept="image/*,.heic,.HEIC"
             onChange={handleFileChange}
             className="file-input file-input-bordered w-full mb-4"
           />
 
           {imagePreview && (
-            <div className="mb-4">
-              <img
-                src={imagePreview}
-                alt="Preview"
-                className="mx-auto rounded-lg max-h-64"
-              />
+            <div className="mb-6">
+              <div className="w-96 h-96 mx-auto rounded-full border-4 border-[#C9694A] shadow-xl overflow-hidden">
+                <img
+                  src={imagePreview}
+                  alt="Preview"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           )}
 
-          <button
-            className="btn btn-primary w-full"
-            disabled={loading}
-            onClick={handleAnalyze}
-          >
-            {loading ? "Analyzing..." : "Analyze"}
-          </button>
+          {imagePreview && !result && (
+            <button
+              className="btn btn-primary w-full"
+              disabled={loading}
+              onClick={handleAnalyze}
+            >
+              {loading ? "Analyzing..." : "Analyze"}
+            </button>
+          )}
+
+          {result && (
+  <div className="mt-8 bg-[#FFF4EE] border border-[#EDA57C] rounded-2xl p-8 shadow-xl max-w-md mx-auto text-center">
+    <h2 className="text-3xl font-extrabold text-[#D64527] mb-4 tracking-wide">
+      ✨ Copperati ✨
+    </h2>
+
+    <p className="text-2xl font-bold text-[#2C2C2C] mb-1">{result.name}</p>
+
+    {/* Optional: add an emoji or flare later based on tone type */}
+    
+    {/* Color Circle */}
+    <div className="my-4">
+      <div
+        className="w-24 h-24 rounded-full border-4 border-neutral shadow-lg mx-auto"
+        style={{ backgroundColor: result.hex }}
+      />
+      <span className="mt-2 block text-sm font-mono text-[#888]">
+        {result.hex}
+      </span>
+    </div>
+
+    {/* Optional subtext */}
+    {result.description && (
+      <p className="italic text-sm text-[#666] mt-2">
+        {result.description}
+      </p>
+    )}
+  </div>
+)}
+
 
           {error && (
             <div className="mt-4 text-red-400 bg-red-900/20 p-3 rounded-lg">
               {error}
-            </div>
-          )}
-
-          {result && (
-            <div className="mt-6 bg-base-300 p-4 rounded-xl text-left">
-              <h2 className="text-xl font-bold text-secondary mb-2">
-                Match: {result.shadeName}
-              </h2>
-              <p className="mb-2 text-base-content">{result.description}</p>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-8 h-8 rounded-full border border-neutral"
-                    style={{ backgroundColor: result.hex }}
-                  />
-                  <span className="text-sm">Match: {result.hex}</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-8 h-8 rounded-full border border-neutral"
-                    style={{ backgroundColor: result.sampledHex }}
-                  />
-                  <span className="text-sm">Sampled: {result.sampledHex}</span>
-                </div>
-              </div>
             </div>
           )}
         </div>
