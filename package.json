@@ -22,6 +22,7 @@
     "@uniswap/v2-sdk": "~4.6.1",
     "blo": "~1.2.0",
     "burner-connector": "0.0.9",
+    "chroma-js": "^3.1.2",
     "colorthief": "^2.6.0",
     "daisyui": "4.12.10",
     "ipfs-utils": "^9.0.14",
