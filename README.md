@@ -1,3 +1,31 @@
+#  Ginger Science hair color matching app + MC1R rewards
+
+## App contains MC1R.sol ERC20 token and a vendor rewards contract.
+
+### This app is just for fun and to grow community & awareness, but also has scientific outcomes. 
+
+#### 1. Redheads face unintentional biases in many types of software. 
+
+In 2024, studies examining AI-driven beauty filters and face-editing tools uncovered biases affecting underrepresented traits. Notably, research on StyleGAN3 models identified internal color and luminance biases not attributable to training data, potentially impacting features like red hair. Additionally, investigations into 3D relightable face generators and diffusion-based models highlighted tendencies to favor lighter skin tones and amplify existing biases, respectively. These findings underscore the need for more inclusive datasets and bias mitigation strategies in AI model development.
+
+StyleGAN3 Discriminator Bias: A study titled "Examining Pathological Bias in a Generative Adversarial Network Discriminator: A Case Study on a StyleGAN3 Model" found that the discriminator of a pre-trained StyleGAN3-r model exhibited internal color and luminance biases. These biases were not attributable to the training data and disproportionately affected images across various attributes, potentially impacting features like red hair. 
+
+- **StyleGAN3 Discriminator Bias**: [Examining Pathological Bias in a Generative Adversarial Network Discriminator: A Case Study on a StyleGAN3 Model](https://arxiv.org/pdf/2402.09786)
+
+
+
+
+Skin Tone Consistency Issues: Research on implicit 3D relightable face generators revealed difficulties in producing relit images with consistent skin tones, especially under lighting conditions extracted from individuals with darker skin. The study noted that the technique was biased towards generating albedo images with lighter skin tones, which could lead to the desaturation of naturally vibrant features such as red hair. 
+- **Skin Tone Consistency Issues**: [Relightable Implicit 3D Face Generators Show Skin Tone Bias](https://arxiv.org/pdf/2411.12002)
+
+Bias in Diffusion-Based Models: An analysis of diffusion-based face generation models indicated that these models could amplify existing biases related to attributes like gender, race, and age. The study emphasized that such biases are influenced by the size and composition of the training datasets, suggesting that underrepresented traits like red hair might be inadequately preserved in generated images. 
+- **Bias in Diffusion-Based Models**: [Analysis of Bias in Diffusion-Based Face Generation Models](https://arxiv.org/pdf/2305.06402)
+
+
+
+
+
+
 # 🏗 Scaffold-ETH 2
 
 <h4 align="center">
